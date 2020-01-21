@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, Keyboard } from "react-native";
 import { Button } from "react-native-paper";
 import ModalPassword from "./ModalPassword";
-import * as SQLite from "expo-sqlite";
 
 class Logged extends React.Component {
   static navigationOptions = {
@@ -11,13 +10,8 @@ class Logged extends React.Component {
 
   state = {
     visible: false,
-    password: JSON.stringify(
-      this.props.navigation.state.params.password
-    ).replace(/\"/g, ""),
-    id: JSON.stringify(this.props.navigation.state.params.id).replace(
-      /\"/g,
-      ""
-    ),
+    password: this.props.navigation.state.params.password,
+    email: this.props.navigation.state.params.email,
     canUpdatePassword: true
   };
 
@@ -25,30 +19,27 @@ class Logged extends React.Component {
    * Update the password in the SQLite DB
    * @param {string} text - The new password
    */
-  _updatePassword = text => {
-    if (text !== this.state.password) {
-      const usersDB = SQLite.openDatabase("users.db");
-      usersDB.transaction(tx => {
-        tx.executeSql(
-          "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
-        );
+  _updatePassword = async () => {
+    try {
+      var form = new FormData();
+      form.append("mail", this.state.email);
+      form.append("password", this.state.password);
+      await fetch("https://www.lmg-graphisme-web-multimedia.fr/api/updateuser.php", {
+        method: "POST",
+        header: {
+          Accept: "application/json",
+          "Content-Type": "'multipart/form-data"
+        },
+        body: form
       });
-
-      const query = "UPDATE users SET password = ? WHERE id = ?";
-      const params = [text, this.state.id];
-
-      usersDB.transaction(tx => {
-        tx.executeSql(query, params);
-      });
-      this.setState({
-        visible: false,
-        canUpdatePassword: false
-      });
-    } else {
-      this.setState({
-        visible: false
-      });
+    } catch (error) {
+      console.log("Error while inserting user", error);
     }
+    this.setState({
+      visible: false,
+      canUpdatePassword: false
+    });
+    Keyboard.dismiss();
   };
 
   /**
@@ -70,18 +61,18 @@ class Logged extends React.Component {
   };
 
   /**
-   * Convert the item from the sign in screen to json object
-   * @param {string} params - The item to convert
+   * Handle the change of password
+   *  @param {string} text - The password to change
    */
-  _convertToJsObject = params => {
-    return JSON.stringify(params).replace(/\"/g, "");
+  _setPassword = text => {
+    this.setState({
+      password: text
+    });
   };
 
   render() {
     const { visible, password, canUpdatePassword } = this.state;
     const { email, name } = this.props.navigation.state.params;
-    const EMAIL = this._convertToJsObject(email);
-    const NAME = this._convertToJsObject(name);
 
     return (
       <View style={styles.container}>
@@ -89,9 +80,9 @@ class Logged extends React.Component {
           style={styles.congratulation}
           source={require("../media/congratulation.png")}
         />
-        <Text style={styles.welcomeTitle}>Bienvenue {NAME} sur YouLog 🎉</Text>
+        <Text style={styles.welcomeTitle}>Bienvenue {name} sur YouLog 🎉</Text>
         <Text style={styles.welcomeMail}>
-          Vous êtes connecté sous {EMAIL} ✉️
+          Vous êtes connecté sous {email} ✉️
         </Text>
         <Button
           mode={"contained"}
@@ -108,8 +99,9 @@ class Logged extends React.Component {
         ) : null}
         <ModalPassword
           visible={visible}
-          updatePassword={text => this._updatePassword(text)}
+          updatePassword={() => this._updatePassword()}
           cancel={this._cancel}
+          setPassword={text => this._setPassword(text)}
           password={password}
         />
       </View>

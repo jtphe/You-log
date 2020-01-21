@@ -5,12 +5,10 @@ import {
   TextInput,
   View,
   Keyboard,
-  ScrollView,
-  Alert
+  ScrollView
 } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
-import * as SQLite from "expo-sqlite";
 
 class SignUp extends React.Component {
   static navigationOptions = {
@@ -59,20 +57,26 @@ class SignUp extends React.Component {
    * @param  {string} email - The email of the user
    * @param  {string} password - The password of the user
    */
-  _insert = (name, email, password) => {
-    const usersDB = SQLite.openDatabase("users.db");
-    usersDB.transaction(tx => {
-      tx.executeSql(
-        "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
+  _insert = async (name, email, password) => {
+    try {
+      var form = new FormData();
+      form.append("name", name);
+      form.append("mail", email);
+      form.append("password", password);
+      await fetch(
+        "https://www.lmg-graphisme-web-multimedia.fr/api/insertuser.php",
+        {
+          method: "POST",
+          header: {
+            Accept: "application/json",
+            "Content-Type": "'multipart/form-data"
+          },
+          body: form
+        }
       );
-    });
-
-    const query = "INSERT INTO users(name, email, password) VALUES (?,?,?);";
-    const usr = [name, email, password];
-
-    usersDB.transaction(tx => {
-      tx.executeSql(query, usr);
-    });
+    } catch (error) {
+      console.log("Error while inserting user", error);
+    }
   };
 
   /**
@@ -81,7 +85,7 @@ class SignUp extends React.Component {
    * @param  {string} password - Password of the user
    * @param  {string} name - Name of the user
    */
-  _checkTextInput = (email, password, name) => {
+  _checkTextInput = async (email, password, name) => {
     Keyboard.dismiss();
     let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -97,7 +101,7 @@ class SignUp extends React.Component {
         opacity: 1
       });
     } else {
-      this._insert(name, email, password);
+      await this._insert(name, email, password);
       this.props.navigation.navigate("SignIn");
     }
   };

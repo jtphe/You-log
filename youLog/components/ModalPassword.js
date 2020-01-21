@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Text, View, Alert, StyleSheet } from "react-native";
+import { Modal, Text, View, StyleSheet } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 
 class ModalPassword extends React.Component {
@@ -7,22 +7,7 @@ class ModalPassword extends React.Component {
     super(props);
   }
 
-  state = {
-    password: this.props.password
-  };
-
-  /**
-   * Handle the change of password
-   *  @param {string} text - The password to change
-   */
-  _setPassword = text => {
-    this.setState({
-      password: text
-    });
-  };
-
   render() {
-    const { password } = this.state;
     return (
       <Modal
         animationType="slide"
@@ -37,11 +22,11 @@ class ModalPassword extends React.Component {
           <View style={styles.textInputContainer}>
             <TextInput
               onChangeText={value => {
-                this._setPassword(value);
+                this.props.setPassword(value);
               }}
               autoCapitalize="none"
               style={styles.inputPassword}
-              value={password}
+              value={this.props.password}
             />
           </View>
           <Button
@@ -56,7 +41,7 @@ class ModalPassword extends React.Component {
             mode={"contained"}
             labelStyle={{ color: "#4834d4" }}
             style={styles.btnConfirm}
-            onPress={() => this.props.updatePassword(password)}
+            onPress={() => this.props.updatePassword()}
           >
             Valider
           </Button>

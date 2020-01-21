@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, View, Text, TextInput, Keyboard } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
-import * as SQLite from "expo-sqlite";
 
 class SignIn extends React.Component {
   static navigationOptions = {
@@ -16,31 +15,31 @@ class SignIn extends React.Component {
   };
 
   componentDidMount() {
-    this._selectUsers();
+    this._loadUsers();
   }
 
   /**
-   * Select all the users from the SQLite DB
+   * Select all the users from the API
    */
-  _selectUsers = () => {
-    const usersDB = SQLite.openDatabase("users.db");
-    usersDB.transaction(tx => {
-      tx.executeSql(
-        "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
-      );
-    });
-
-    const query = "SELECT * FROM users";
-    const params = [];
-    usersDB.transaction(tx => {
-      tx.executeSql(query, params, (_, { rows }) => {
-        if (rows.length > 0) {
-          this.setState({
-            users: rows._array
-          });
+  _loadUsers = async () => {
+    try {
+      let response = await fetch(
+        "https://www.lmg-graphisme-web-multimedia.fr/api/getusers.php",
+        {
+          method: "GET",
+          header: {
+            Accept: "application/json",
+            "Content-Type": "application.json"
+          }
         }
+      );
+      let responseJs = await response.json();
+      this.setState({
+        users: responseJs
       });
-    });
+    } catch (error) {
+      console.log("Error while loading user", error);
+    }
   };
 
   /**
@@ -68,18 +67,30 @@ class SignIn extends React.Component {
    * @param {} email - The email put by the user
    * @param {} password - The password put by the user
    */
-  _checkUser = (email, password) => {
-    const { users } = this.state;
-    for (let i = 0; i < users.length; i++) {
-      const element = users[i];
-      if (email === element.email && password === element.password) {
+  _checkUser = async (email, password) => {
+    try {
+      var form = new FormData();
+      form.append("mail", email);
+      form.append("password", password);
+      let response = await fetch(
+        "https://www.lmg-graphisme-web-multimedia.fr/api/getuser.php",
+        {
+          method: "POST",
+          header: {
+            Accept: "application/json",
+            "Content-Type": "'multipart/form-data"
+          },
+          body: form
+        }
+      );
+      let responseJs = await response.json();
+      if (responseJs) {
         this.props.navigation.push("Logged", {
-          name: element.name,
-          email: element.email,
-          password: element.password,
-          id: element.id
+          name: responseJs.name,
+          email: responseJs.pseudo,
+          password: responseJs.password,
+          id: responseJs.id
         });
-        break;
       } else {
         Toast.show("Le mail ou le mot de passe est incorrect", {
           duration: Toast.durations.LONG,
@@ -88,6 +99,8 @@ class SignIn extends React.Component {
           opacity: 1
         });
       }
+    } catch (error) {
+      console.log("Error while checking user", error);
     }
   };
 
