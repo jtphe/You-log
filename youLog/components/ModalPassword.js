@@ -42,7 +42,6 @@ class ModalPassword extends React.Component {
    * @returns {React.Component} - Password Modal
    */
   render() {
-    const { password } = this.state;
     return (
       <Modal
         animationType="slide"
@@ -57,11 +56,11 @@ class ModalPassword extends React.Component {
           <View style={styles.textInputContainer}>
             <TextInput
               onChangeText={value => {
-                this._setPassword(value);
+                this.props.setPassword(value);
               }}
               autoCapitalize="none"
               style={styles.inputPassword}
-              value={password}
+              value={this.props.password}
             />
           </View>
           <Button
@@ -76,7 +75,7 @@ class ModalPassword extends React.Component {
             mode={"contained"}
             labelStyle={{ color: "#4834d4" }}
             style={styles.btnConfirm}
-            onPress={() => this.props.updatePassword(password)}
+            onPress={() => this.props.updatePassword()}
           >
             Valider
           </Button>
