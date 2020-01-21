@@ -1,31 +1,87 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { Button } from "react-native-paper";
+import ModalPassword from "./ModalPassword";
+import * as SQLite from "expo-sqlite";
 
 class Logged extends React.Component {
   static navigationOptions = {
     title: "YouLog"
   };
 
-  render() {
-    const email = JSON.stringify(
-      this.props.navigation.state.params.email
-    ).replace(/\"/g, "");
+  state = {
+    visible: false,
+    password: JSON.stringify(
+      this.props.navigation.state.params.password
+    ).replace(/\"/g, ""),
+    id: JSON.stringify(this.props.navigation.state.params.id).replace(
+      /\"/g,
+      ""
+    ),
+    canUpdatePassword: true
+  };
 
-    var name = "cher utilisateur";
-    if (this.props.navigation.state.params.signup) {
-      if (
-        JSON.stringify(this.props.navigation.state.params.name).replace(
-          /\"/g,
-          ""
-        ) !== ""
-      ) {
-        name = JSON.stringify(this.props.navigation.state.params.name).replace(
-          /\"/g,
-          ""
+  /**
+   * Update the password in the SQLite DB
+   * @param {string} text - The new password
+   */
+  _updatePassword = text => {
+    if (text !== this.state.password) {
+      const usersDB = SQLite.openDatabase("users.db");
+      usersDB.transaction(tx => {
+        tx.executeSql(
+          "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
         );
-      }
+      });
+
+      const query = "UPDATE users SET password = ? WHERE id = ?";
+      const params = [text, this.state.id];
+
+      usersDB.transaction(tx => {
+        tx.executeSql(query, params);
+      });
+      this.setState({
+        visible: false,
+        canUpdatePassword: false
+      });
+    } else {
+      this.setState({
+        visible: false
+      });
     }
+  };
+
+  /**
+   * Hide the modal to change the password when user click on the cancel button
+   */
+  _cancel = () => {
+    this.setState({
+      visible: false
+    });
+  };
+
+  /**
+   * Show the modal to change the password
+   */
+  _showModal = () => {
+    this.setState({
+      visible: true
+    });
+  };
+
+  /**
+   * Convert the item from the sign in screen to json object
+   * @param {string} params - The item to convert
+   */
+  _convertToJsObject = params => {
+    return JSON.stringify(params).replace(/\"/g, "");
+  };
+
+  render() {
+    const { visible, password, canUpdatePassword } = this.state;
+    const { email, name } = this.props.navigation.state.params;
+    const EMAIL = this._convertToJsObject(email);
+    const NAME = this._convertToJsObject(name);
 
     return (
       <View style={styles.container}>
@@ -33,9 +89,9 @@ class Logged extends React.Component {
           style={styles.congratulation}
           source={require("../media/congratulation.png")}
         />
-        <Text style={styles.welcomeTitle}>Bienvenue {name} sur YouLog 🎉</Text>
+        <Text style={styles.welcomeTitle}>Bienvenue {NAME} sur YouLog 🎉</Text>
         <Text style={styles.welcomeMail}>
-          Vous êtes connecté sous {email} ✉️
+          Vous êtes connecté sous {EMAIL} ✉️
         </Text>
         <Button
           mode={"contained"}
@@ -45,6 +101,17 @@ class Logged extends React.Component {
         >
           Déconnexion
         </Button>
+        {canUpdatePassword ? (
+          <TouchableOpacity onPress={this._showModal}>
+            <Text style={styles.password}>Changer votre mot de passe</Text>
+          </TouchableOpacity>
+        ) : null}
+        <ModalPassword
+          visible={visible}
+          updatePassword={text => this._updatePassword(text)}
+          cancel={this._cancel}
+          password={password}
+        />
       </View>
     );
   }
@@ -85,6 +152,11 @@ const styles = StyleSheet.create({
     width: 180,
     height: 180,
     marginBottom: 20
+  },
+  password: {
+    marginTop: 20,
+    color: "#4834d4",
+    textDecorationLine: "underline"
   }
 });
 

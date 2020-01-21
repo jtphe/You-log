@@ -5,10 +5,12 @@ import {
   TextInput,
   View,
   Keyboard,
-  ScrollView
+  ScrollView,
+  Alert
 } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
+import * as SQLite from "expo-sqlite";
 
 class SignUp extends React.Component {
   static navigationOptions = {
@@ -21,29 +23,73 @@ class SignUp extends React.Component {
     password: ""
   };
 
-  onChangeName = text => {
+  /**
+   * Handle the change of name
+   *  @param {string} text - The name to change
+   */
+  _onChangeName = text => {
     this.setState({
       name: text
     });
   };
 
-  onChangeEmail = text => {
+  /**
+   * Handle the change of email
+   *  @param {string} text - The email to change
+   */
+  _onChangeEmail = text => {
     this.setState({
       email: text
     });
   };
 
-  onChangePassword = text => {
+  /**
+   * Handle the change of password
+   *  @param {string} text - The password to change
+   */
+  _onChangePassword = text => {
     this.setState({
       password: text
     });
   };
 
-  checkTextInput = (email, password, name) => {
+  /**
+   * Insert the user in the SQLite DB
+   * @param  {string} name - The name of the user
+   * @param  {string} email - The email of the user
+   * @param  {string} password - The password of the user
+   */
+  _insert = (name, email, password) => {
+    const usersDB = SQLite.openDatabase("users.db");
+    usersDB.transaction(tx => {
+      tx.executeSql(
+        "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
+      );
+    });
+
+    const query = "INSERT INTO users(name, email, password) VALUES (?,?,?);";
+    const usr = [name, email, password];
+
+    usersDB.transaction(tx => {
+      tx.executeSql(query, usr);
+    });
+  };
+
+  /**
+   * Check the value in the text input
+   * @param  {string} email - Email of the user
+   * @param  {string} password - Password of the user
+   * @param  {string} name - Name of the user
+   */
+  _checkTextInput = (email, password, name) => {
     Keyboard.dismiss();
     let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (reg.test(email) === false && !email.length > 0 && !password.length > 0) {
+    if (
+      reg.test(email) === false &&
+      !email.length > 0 &&
+      !password.length > 0
+    ) {
       Toast.show("Entrez un email valide", {
         duration: Toast.durations.LONG,
         position: Toast.positions.TOP + 60,
@@ -51,12 +97,8 @@ class SignUp extends React.Component {
         opacity: 1
       });
     } else {
-      this.props.navigation.navigate("SignIn", {
-        name: name,
-        email: email,
-        password: password,
-        signup: true
-      });
+      this._insert(name, email, password);
+      this.props.navigation.navigate("SignIn");
     }
   };
 
@@ -69,9 +111,9 @@ class SignUp extends React.Component {
           <ScrollView>
             <TextInput
               style={styles.input}
-              placeholder="Nom (optionnel)"
-              onChangeText={this.onChangeName}
-              autoCapitalize = 'none'
+              placeholder="Nom"
+              onChangeText={this._onChangeName}
+              autoCapitalize="none"
               returnKeyType={"next"}
               onSubmitEditing={() => {
                 this.emailTextInput.focus();
@@ -84,10 +126,10 @@ class SignUp extends React.Component {
               }}
               style={styles.input}
               placeholder="E-mail"
-              textContentType="email"
+              textContentType="emailAddress"
               keyboardType="email-address"
-              onChangeText={this.onChangeEmail}
-              autoCapitalize = 'none'
+              onChangeText={this._onChangeEmail}
+              autoCapitalize="none"
               returnKeyType={"next"}
               onSubmitEditing={() => {
                 this.passwordTextInput.focus();
@@ -102,7 +144,7 @@ class SignUp extends React.Component {
               placeholder="Mot de passe"
               textContentType="password"
               secureTextEntry={true}
-              onChangeText={this.onChangePassword}
+              onChangeText={this._onChangePassword}
             />
           </ScrollView>
         </View>
@@ -110,8 +152,9 @@ class SignUp extends React.Component {
           mode={"contained"}
           labelStyle={{ color: "#fff" }}
           style={styles.btnSignIn}
-          onPress={() => this.checkTextInput
-            (email.trim(), password, name.trim())}
+          onPress={() =>
+            this._checkTextInput(email.trim(), password, name.trim())
+          }
         >
           Valider
         </Button>
