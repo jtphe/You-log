@@ -4,17 +4,32 @@ import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
 import * as SQLite from "expo-sqlite";
 
+/**
+ * The SignIn class
+ */
 class SignIn extends React.Component {
+  /**
+   * Pass the title option to the navigation
+   */
   static navigationOptions = {
     title: "Connexion"
   };
 
+  /**
+   * email: The user email |
+   * password: The user password | 
+   * users: Users list
+   * @type {{email: string, password: string, users: array}}
+   */
   state = {
     email: "",
     password: "",
     users: []
   };
 
+  /**
+   * Call the method selectUser to get all the users of the DB
+   */
   componentDidMount() {
     this._selectUsers();
   }
@@ -112,6 +127,10 @@ class SignIn extends React.Component {
     }
   };
 
+  /**
+   * Render the sign in screen
+   * @returns {React.Component} - SignIn Component
+   */
   render() {
     const { email, password } = this.state;
 
@@ -159,6 +178,9 @@ class SignIn extends React.Component {
   }
 }
 
+/**
+ * Styles of the SignIn Component
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,

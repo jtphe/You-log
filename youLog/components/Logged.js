@@ -4,11 +4,24 @@ import { Button } from "react-native-paper";
 import ModalPassword from "./ModalPassword";
 import * as SQLite from "expo-sqlite";
 
+/**
+ * The Logged class
+ * @reactProps {object} navigation - Navigation props
+ */
 class Logged extends React.Component {
+  /**
+   * Pass the title option to the navigation
+   */
   static navigationOptions = {
     title: "YouLog"
   };
 
+  /**
+   * visibility : The visibility of the update password button | 
+   * password:  The user password |
+   * canUpdatePassword: If the user can update the password or not
+   * @type {{visible: boolean, password: string, id: string, canUpdatePassword: boolean}}
+   */
   state = {
     visible: false,
     password: JSON.stringify(
@@ -77,6 +90,10 @@ class Logged extends React.Component {
     return JSON.stringify(params).replace(/\"/g, "");
   };
 
+  /**
+   * Render the main screen
+   * @returns {React.Component} - Logged Component
+   */
   render() {
     const { visible, password, canUpdatePassword } = this.state;
     const { email, name } = this.props.navigation.state.params;
@@ -117,6 +134,9 @@ class Logged extends React.Component {
   }
 }
 
+/**
+ * Styles of the Logged Component
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,

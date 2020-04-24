@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/SignIn.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/components/Logged.js~Logged.html">Logged</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/components/ModalPassword.js~ModalPassword.html">ModalPassword</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/components/SignIn.js~SignIn.html">SignIn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/components/SignUp.js~SignUp.html">SignUp</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/SignIn.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React from &quot;react&quot;;
+import { StyleSheet, View, Text, TextInput, Keyboard } from &quot;react-native&quot;;
+import { Button } from &quot;react-native-paper&quot;;
+import Toast from &quot;react-native-root-toast&quot;;
+import * as SQLite from &quot;expo-sqlite&quot;;
+
+/**
+ * The SignIn class
+ */
+class SignIn extends React.Component {
+  /**
+   * Pass the title option to the navigation
+   */
+  static navigationOptions = {
+    title: &quot;Connexion&quot;
+  };
+
+  /**
+   * email: The user email |
+   * password: The user password | 
+   * users: Users list
+   * @type {{email: string, password: string, users: array}}
+   */
+  state = {
+    email: &quot;&quot;,
+    password: &quot;&quot;,
+    users: []
+  };
+
+  /**
+   * Call the method selectUser to get all the users of the DB
+   */
+  componentDidMount() {
+    this._selectUsers();
+  }
+
+  /**
+   * Select all the users from the SQLite DB
+   */
+  _selectUsers = () =&gt; {
+    const usersDB = SQLite.openDatabase(&quot;users.db&quot;);
+    usersDB.transaction(tx =&gt; {
+      tx.executeSql(
+        &quot;CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);&quot;
+      );
+    });
+
+    const query = &quot;SELECT * FROM users&quot;;
+    const params = [];
+    usersDB.transaction(tx =&gt; {
+      tx.executeSql(query, params, (_, { rows }) =&gt; {
+        if (rows.length &gt; 0) {
+          this.setState({
+            users: rows._array
+          });
+        }
+      });
+    });
+  };
+
+  /**
+   * Handle the change of email
+   * @param {string} text - The email to change
+   */
+  _onChangeEmail = text =&gt; {
+    this.setState({
+      email: text
+    });
+  };
+
+  /**
+   * Handle the change of password
+   * @param {string} text - The password to change
+   */
+  _onChangePassword = text =&gt; {
+    this.setState({
+      password: text
+    });
+  };
+
+  /**
+   * Check if the informations put by the user are equivalent to a user from the SQLite DB
+   * @param {} email - The email put by the user
+   * @param {} password - The password put by the user
+   */
+  _checkUser = (email, password) =&gt; {
+    const { users } = this.state;
+    for (let i = 0; i &lt; users.length; i++) {
+      const element = users[i];
+      if (email === element.email &amp;&amp; password === element.password) {
+        this.props.navigation.push(&quot;Logged&quot;, {
+          name: element.name,
+          email: element.email,
+          password: element.password,
+          id: element.id
+        });
+        break;
+      } else {
+        Toast.show(&quot;Le mail ou le mot de passe est incorrect&quot;, {
+          duration: Toast.durations.LONG,
+          position: Toast.positions.TOP + 60,
+          shadow: false,
+          opacity: 1
+        });
+      }
+    }
+  };
+
+  /**
+   * Check if the email and password put by the user are correct
+   * @param {} email - The email put by the user
+   * @param {} password - The password put by the user
+   */
+  _checkTextInput = (email, password) =&gt; {
+    Keyboard.dismiss();
+    let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (reg.test(email) === false || !password.length &gt; 0) {
+      Toast.show(&quot;Les informations saisies sont incorrectes&quot;, {
+        duration: Toast.durations.LONG,
+        position: Toast.positions.TOP + 60,
+        shadow: false,
+        opacity: 1
+      });
+    } else {
+      this._checkUser(email, password);
+    }
+  };
+
+  /**
+   * Render the sign in screen
+   * @returns {React.Component} - SignIn Component
+   */
+  render() {
+    const { email, password } = this.state;
+
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;Text style={styles.signInTitle}&gt;Connectez-vous&lt;/Text&gt;
+        &lt;View style={styles.textInputContainer}&gt;
+          &lt;TextInput
+            style={styles.input}
+            placeholder=&quot;E-mail&quot;
+            textContentType=&quot;emailAddress&quot;
+            keyboardType=&quot;email-address&quot;
+            onChangeText={this._onChangeEmail}
+            autoCapitalize=&quot;none&quot;
+            returnKeyType={&quot;next&quot;}
+            onSubmitEditing={() =&gt; {
+              this.passwordTextInput.focus();
+            }}
+            blurOnSubmit={false}
+          /&gt;
+          &lt;TextInput
+            ref={input =&gt; {
+              this.passwordTextInput = input;
+            }}
+            style={styles.input}
+            placeholder=&quot;Mot de passe&quot;
+            textContentType=&quot;password&quot;
+            autoCapitalize=&quot;none&quot;
+            secureTextEntry={true}
+            onChangeText={this._onChangePassword}
+          /&gt;
+        &lt;/View&gt;
+        &lt;Button
+          mode={&quot;contained&quot;}
+          labelStyle={{ color: &quot;#fff&quot; }}
+          style={styles.btnSignIn}
+          onPress={() =&gt; {
+            this._checkTextInput(email.trim(), password);
+          }}
+        &gt;
+          Connexion
+        &lt;/Button&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+/**
+ * Styles of the SignIn Component
+ */
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: &quot;column&quot;,
+    alignItems: &quot;stretch&quot;,
+    justifyContent: &quot;center&quot;
+  },
+  textInputContainer: {
+    marginTop: 20
+  },
+  input: {
+    height: 50,
+    marginLeft: 50,
+    marginRight: 50,
+    paddingLeft: 15,
+    borderColor: &quot;#ecf0f1&quot;,
+    borderWidth: 1,
+    borderRadius: 6,
+    marginBottom: 25
+  },
+  btnSignIn: {
+    backgroundColor: &quot;#4834d4&quot;,
+    padding: 8,
+    paddingLeft: 35,
+    paddingRight: 35,
+    marginLeft: 50,
+    marginRight: 50,
+    marginBottom: 40
+  },
+  signInTitle: {
+    textAlign: &quot;center&quot;,
+    fontSize: 20,
+    marginBottom: 10
+  }
+});
+
+export default SignIn;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
