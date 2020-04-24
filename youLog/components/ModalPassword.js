@@ -1,12 +1,28 @@
 import React from "react";
-import { Modal, Text, View, Alert, StyleSheet } from "react-native";
+import { Modal, Text, View, StyleSheet } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 
+/**
+ * The ModalPassword class
+ * @reactProps {string} password - User password
+ * @reactProps {boolean} visible - The visibility of the update password button
+ * @reactProps {function} hide - Hide the modal
+ * @reactProps {function} cancel - Cancel the password update 
+ * @reactProps {function} updatePassword - Update the user password 
+ */
 class ModalPassword extends React.Component {
+  /**
+   * ModalPassword constructor
+   * @param {props} props - ModalPassword props
+   */
   constructor(props) {
     super(props);
   }
-
+  
+  /**
+   * password : The user password
+   * @type {password: string}
+   */
   state = {
     password: this.props.password
   };
@@ -21,6 +37,10 @@ class ModalPassword extends React.Component {
     });
   };
 
+  /**
+   * Render the password modal
+   * @returns {React.Component} - Password Modal
+   */
   render() {
     const { password } = this.state;
     return (
@@ -66,6 +86,9 @@ class ModalPassword extends React.Component {
   }
 }
 
+/**
+ * Styles of the ModalPassword Component
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,

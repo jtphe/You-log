@@ -1,0 +1,1535 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "components/Logged.js",
+    "content": "import React from \"react\";\nimport { StyleSheet, Text, View, Image, TouchableOpacity } from \"react-native\";\nimport { Button } from \"react-native-paper\";\nimport ModalPassword from \"./ModalPassword\";\nimport * as SQLite from \"expo-sqlite\";\n\n/**\n * The Logged class\n * @reactProps {object} navigation - Navigation props\n */\nclass Logged extends React.Component {\n  /**\n   * Pass the title option to the navigation\n   */\n  static navigationOptions = {\n    title: \"YouLog\"\n  };\n\n  /**\n   * visibility : The visibility of the update password button | \n   * password:  The user password |\n   * canUpdatePassword: If the user can update the password or not\n   * @type {{visible: boolean, password: string, id: string, canUpdatePassword: boolean}}\n   */\n  state = {\n    visible: false,\n    password: JSON.stringify(\n      this.props.navigation.state.params.password\n    ).replace(/\\\"/g, \"\"),\n    id: JSON.stringify(this.props.navigation.state.params.id).replace(\n      /\\\"/g,\n      \"\"\n    ),\n    canUpdatePassword: true\n  };\n\n  /**\n   * Update the password in the SQLite DB\n   * @param {string} text - The new password\n   */\n  _updatePassword = text => {\n    if (text !== this.state.password) {\n      const usersDB = SQLite.openDatabase(\"users.db\");\n      usersDB.transaction(tx => {\n        tx.executeSql(\n          \"CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);\"\n        );\n      });\n\n      const query = \"UPDATE users SET password = ? WHERE id = ?\";\n      const params = [text, this.state.id];\n\n      usersDB.transaction(tx => {\n        tx.executeSql(query, params);\n      });\n      this.setState({\n        visible: false,\n        canUpdatePassword: false\n      });\n    } else {\n      this.setState({\n        visible: false\n      });\n    }\n  };\n\n  /**\n   * Hide the modal to change the password when user click on the cancel button\n   */\n  _cancel = () => {\n    this.setState({\n      visible: false\n    });\n  };\n\n  /**\n   * Show the modal to change the password\n   */\n  _showModal = () => {\n    this.setState({\n      visible: true\n    });\n  };\n\n  /**\n   * Convert the item from the sign in screen to json object\n   * @param {string} params - The item to convert\n   */\n  _convertToJsObject = params => {\n    return JSON.stringify(params).replace(/\\\"/g, \"\");\n  };\n\n  /**\n   * Render the main screen\n   * @returns {React.Component} - Logged Component\n   */\n  render() {\n    const { visible, password, canUpdatePassword } = this.state;\n    const { email, name } = this.props.navigation.state.params;\n    const EMAIL = this._convertToJsObject(email);\n    const NAME = this._convertToJsObject(name);\n\n    return (\n      <View style={styles.container}>\n        <Image\n          style={styles.congratulation}\n          source={require(\"../media/congratulation.png\")}\n        />\n        <Text style={styles.welcomeTitle}>Bienvenue {NAME} sur YouLog 🎉</Text>\n        <Text style={styles.welcomeMail}>\n          Vous êtes connecté sous {EMAIL} ✉️\n        </Text>\n        <Button\n          mode={\"contained\"}\n          labelStyle={{ color: \"#4834d4\" }}\n          style={styles.btnSignUp}\n          onPress={() => this.props.navigation.popToTop()}\n        >\n          Déconnexion\n        </Button>\n        {canUpdatePassword ? (\n          <TouchableOpacity onPress={this._showModal}>\n            <Text style={styles.password}>Changer votre mot de passe</Text>\n          </TouchableOpacity>\n        ) : null}\n        <ModalPassword\n          visible={visible}\n          updatePassword={text => this._updatePassword(text)}\n          cancel={this._cancel}\n          password={password}\n        />\n      </View>\n    );\n  }\n}\n\n/**\n * Styles of the Logged Component\n */\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    flexDirection: \"column\",\n    alignItems: \"center\",\n    justifyContent: \"center\"\n  },\n  btnSignUp: {\n    backgroundColor: \"#fff\",\n    padding: 8,\n    paddingLeft: 35,\n    paddingRight: 35,\n    marginLeft: 50,\n    marginRight: 50\n  },\n  welcomeTitle: {\n    textAlign: \"center\",\n    marginTop: 20,\n    marginBottom: 20,\n    marginLeft: 30,\n    marginRight: 30,\n    fontSize: 20\n  },\n  welcomeMail: {\n    textAlign: \"center\",\n    marginTop: 20,\n    marginBottom: 40,\n    marginLeft: 30,\n    marginRight: 30,\n    fontSize: 14\n  },\n  congratulation: {\n    width: 180,\n    height: 180,\n    marginBottom: 20\n  },\n  password: {\n    marginTop: 20,\n    color: \"#4834d4\",\n    textDecorationLine: \"underline\"\n  }\n});\n\nexport default Logged;\n",
+    "static": true,
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/components/Logged.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "components/Logged.js",
+    "static": true,
+    "longname": "components/Logged.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "./components/Logged.js",
+    "importStyle": null,
+    "description": "Styles of the Logged Component",
+    "lineNumber": 140,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "Logged",
+    "memberof": "components/Logged.js",
+    "static": true,
+    "longname": "components/Logged.js~Logged",
+    "access": "public",
+    "export": true,
+    "importPath": "./components/Logged.js",
+    "importStyle": "Logged",
+    "description": "The Logged class",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{object} navigation - Navigation props"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "navigationOptions",
+    "memberof": "components/Logged.js~Logged",
+    "static": true,
+    "longname": "components/Logged.js~Logged.navigationOptions",
+    "access": "public",
+    "description": "Pass the title option to the navigation",
+    "lineNumber": 15,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "state",
+    "memberof": "components/Logged.js~Logged",
+    "static": false,
+    "longname": "components/Logged.js~Logged#state",
+    "access": "public",
+    "description": "visibility : The visibility of the update password button | \npassword:  The user password |\ncanUpdatePassword: If the user can update the password or not",
+    "lineNumber": 25,
+    "type": {
+      "nullable": null,
+      "types": [
+        "{visible: boolean, password: string, id: string, canUpdatePassword: boolean}"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "_updatePassword",
+    "memberof": "components/Logged.js~Logged",
+    "static": false,
+    "longname": "components/Logged.js~Logged#_updatePassword",
+    "access": "private",
+    "description": "Update the password in the SQLite DB",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The new password"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "_cancel",
+    "memberof": "components/Logged.js~Logged",
+    "static": false,
+    "longname": "components/Logged.js~Logged#_cancel",
+    "access": "private",
+    "description": "Hide the modal to change the password when user click on the cancel button",
+    "lineNumber": 70,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "_showModal",
+    "memberof": "components/Logged.js~Logged",
+    "static": false,
+    "longname": "components/Logged.js~Logged#_showModal",
+    "access": "private",
+    "description": "Show the modal to change the password",
+    "lineNumber": 79,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "_convertToJsObject",
+    "memberof": "components/Logged.js~Logged",
+    "static": false,
+    "longname": "components/Logged.js~Logged#_convertToJsObject",
+    "access": "private",
+    "description": "Convert the item from the sign in screen to json object",
+    "lineNumber": 89,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The item to convert"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "render",
+    "memberof": "components/Logged.js~Logged",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/Logged.js~Logged#render",
+    "access": "public",
+    "description": "Render the main screen",
+    "lineNumber": 97,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{React.Component} - Logged Component"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "React.Component"
+      ],
+      "spread": false,
+      "description": "Logged Component"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "components/ModalPassword.js",
+    "content": "import React from \"react\";\nimport { Modal, Text, View, StyleSheet } from \"react-native\";\nimport { TextInput, Button } from \"react-native-paper\";\n\n/**\n * The ModalPassword class\n * @reactProps {string} password - User password\n * @reactProps {boolean} visible - The visibility of the update password button\n * @reactProps {function} hide - Hide the modal\n * @reactProps {function} cancel - Cancel the password update \n * @reactProps {function} updatePassword - Update the user password \n */\nclass ModalPassword extends React.Component {\n  /**\n   * ModalPassword constructor\n   * @param {props} props - ModalPassword props\n   */\n  constructor(props) {\n    super(props);\n  }\n  \n  /**\n   * password : The user password\n   * @type {password: string}\n   */\n  state = {\n    password: this.props.password\n  };\n\n  /**\n   * Handle the change of password\n   *  @param {string} text - The password to change\n   */\n  _setPassword = text => {\n    this.setState({\n      password: text\n    });\n  };\n\n  /**\n   * Render the password modal\n   * @returns {React.Component} - Password Modal\n   */\n  render() {\n    const { password } = this.state;\n    return (\n      <Modal\n        animationType=\"slide\"\n        transparent={false}\n        visible={this.props.visible}\n        onRequestClose={() => {\n          this.props.hide;\n        }}\n      >\n        <View style={styles.container}>\n          <Text style={styles.passwordTitle}>Modifier votre mot de passe</Text>\n          <View style={styles.textInputContainer}>\n            <TextInput\n              onChangeText={value => {\n                this._setPassword(value);\n              }}\n              autoCapitalize=\"none\"\n              style={styles.inputPassword}\n              value={password}\n            />\n          </View>\n          <Button\n            mode={\"contained\"}\n            labelStyle={{ color: \"#fff\" }}\n            style={styles.btnCancel}\n            onPress={() => this.props.cancel()}\n          >\n            Annuler\n          </Button>\n          <Button\n            mode={\"contained\"}\n            labelStyle={{ color: \"#4834d4\" }}\n            style={styles.btnConfirm}\n            onPress={() => this.props.updatePassword(password)}\n          >\n            Valider\n          </Button>\n        </View>\n      </Modal>\n    );\n  }\n}\n\n/**\n * Styles of the ModalPassword Component\n */\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    flexDirection: \"column\",\n    alignItems: \"stretch\",\n    justifyContent: \"center\"\n  },\n  textInputContainer: {\n    marginTop: 20\n  },\n  btnConfirm: {\n    backgroundColor: \"#fff\",\n    padding: 8,\n    paddingLeft: 35,\n    paddingRight: 35,\n    marginLeft: 50,\n    marginRight: 50,\n    marginTop: 20\n  },\n  btnCancel: {\n    backgroundColor: \"#4834d4\",\n    padding: 8,\n    paddingLeft: 35,\n    paddingRight: 35,\n    marginLeft: 50,\n    marginRight: 50\n  },\n  inputPassword: {\n    height: 50,\n    marginLeft: 50,\n    marginRight: 50,\n    paddingLeft: 15,\n    borderColor: \"#ecf0f1\",\n    borderWidth: 1,\n    borderRadius: 6,\n    marginBottom: 25\n  },\n  passwordTitle: {\n    textAlign: \"center\",\n    fontSize: 20,\n    marginBottom: 10\n  }\n});\n\nexport default ModalPassword;\n",
+    "static": true,
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/components/ModalPassword.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "components/ModalPassword.js",
+    "static": true,
+    "longname": "components/ModalPassword.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "./components/ModalPassword.js",
+    "importStyle": null,
+    "description": "Styles of the ModalPassword Component",
+    "lineNumber": 92,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "class",
+    "name": "ModalPassword",
+    "memberof": "components/ModalPassword.js",
+    "static": true,
+    "longname": "components/ModalPassword.js~ModalPassword",
+    "access": "public",
+    "export": true,
+    "importPath": "./components/ModalPassword.js",
+    "importStyle": "ModalPassword",
+    "description": "The ModalPassword class",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{string} password - User password"
+      },
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{boolean} visible - The visibility of the update password button"
+      },
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{function} hide - Hide the modal"
+      },
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{function} cancel - Cancel the password update "
+      },
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{function} updatePassword - Update the user password "
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 61,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "components/ModalPassword.js~ModalPassword",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/ModalPassword.js~ModalPassword#constructor",
+    "access": "public",
+    "description": "ModalPassword constructor",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "props"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "ModalPassword props"
+      }
+    ]
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "state",
+    "memberof": "components/ModalPassword.js~ModalPassword",
+    "static": false,
+    "longname": "components/ModalPassword.js~ModalPassword#state",
+    "access": "public",
+    "description": "password : The user password",
+    "lineNumber": 26,
+    "type": {
+      "nullable": null,
+      "types": [
+        "password: string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "name": "_setPassword",
+    "memberof": "components/ModalPassword.js~ModalPassword",
+    "static": false,
+    "longname": "components/ModalPassword.js~ModalPassword#_setPassword",
+    "access": "private",
+    "description": "Handle the change of password",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The password to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "render",
+    "memberof": "components/ModalPassword.js~ModalPassword",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/ModalPassword.js~ModalPassword#render",
+    "access": "public",
+    "description": "Render the password modal",
+    "lineNumber": 44,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{React.Component} - Password Modal"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "React.Component"
+      ],
+      "spread": false,
+      "description": "Password Modal"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "components/SignIn.js",
+    "content": "import React from \"react\";\nimport { StyleSheet, View, Text, TextInput, Keyboard } from \"react-native\";\nimport { Button } from \"react-native-paper\";\nimport Toast from \"react-native-root-toast\";\nimport * as SQLite from \"expo-sqlite\";\n\n/**\n * The SignIn class\n */\nclass SignIn extends React.Component {\n  /**\n   * Pass the title option to the navigation\n   */\n  static navigationOptions = {\n    title: \"Connexion\"\n  };\n\n  /**\n   * email: The user email |\n   * password: The user password | \n   * users: Users list\n   * @type {{email: string, password: string, users: array}}\n   */\n  state = {\n    email: \"\",\n    password: \"\",\n    users: []\n  };\n\n  /**\n   * Call the method selectUser to get all the users of the DB\n   */\n  componentDidMount() {\n    this._selectUsers();\n  }\n\n  /**\n   * Select all the users from the SQLite DB\n   */\n  _selectUsers = () => {\n    const usersDB = SQLite.openDatabase(\"users.db\");\n    usersDB.transaction(tx => {\n      tx.executeSql(\n        \"CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);\"\n      );\n    });\n\n    const query = \"SELECT * FROM users\";\n    const params = [];\n    usersDB.transaction(tx => {\n      tx.executeSql(query, params, (_, { rows }) => {\n        if (rows.length > 0) {\n          this.setState({\n            users: rows._array\n          });\n        }\n      });\n    });\n  };\n\n  /**\n   * Handle the change of email\n   * @param {string} text - The email to change\n   */\n  _onChangeEmail = text => {\n    this.setState({\n      email: text\n    });\n  };\n\n  /**\n   * Handle the change of password\n   * @param {string} text - The password to change\n   */\n  _onChangePassword = text => {\n    this.setState({\n      password: text\n    });\n  };\n\n  /**\n   * Check if the informations put by the user are equivalent to a user from the SQLite DB\n   * @param {} email - The email put by the user\n   * @param {} password - The password put by the user\n   */\n  _checkUser = (email, password) => {\n    const { users } = this.state;\n    for (let i = 0; i < users.length; i++) {\n      const element = users[i];\n      if (email === element.email && password === element.password) {\n        this.props.navigation.push(\"Logged\", {\n          name: element.name,\n          email: element.email,\n          password: element.password,\n          id: element.id\n        });\n        break;\n      } else {\n        Toast.show(\"Le mail ou le mot de passe est incorrect\", {\n          duration: Toast.durations.LONG,\n          position: Toast.positions.TOP + 60,\n          shadow: false,\n          opacity: 1\n        });\n      }\n    }\n  };\n\n  /**\n   * Check if the email and password put by the user are correct\n   * @param {} email - The email put by the user\n   * @param {} password - The password put by the user\n   */\n  _checkTextInput = (email, password) => {\n    Keyboard.dismiss();\n    let reg = /^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/;\n\n    if (reg.test(email) === false || !password.length > 0) {\n      Toast.show(\"Les informations saisies sont incorrectes\", {\n        duration: Toast.durations.LONG,\n        position: Toast.positions.TOP + 60,\n        shadow: false,\n        opacity: 1\n      });\n    } else {\n      this._checkUser(email, password);\n    }\n  };\n\n  /**\n   * Render the sign in screen\n   * @returns {React.Component} - SignIn Component\n   */\n  render() {\n    const { email, password } = this.state;\n\n    return (\n      <View style={styles.container}>\n        <Text style={styles.signInTitle}>Connectez-vous</Text>\n        <View style={styles.textInputContainer}>\n          <TextInput\n            style={styles.input}\n            placeholder=\"E-mail\"\n            textContentType=\"emailAddress\"\n            keyboardType=\"email-address\"\n            onChangeText={this._onChangeEmail}\n            autoCapitalize=\"none\"\n            returnKeyType={\"next\"}\n            onSubmitEditing={() => {\n              this.passwordTextInput.focus();\n            }}\n            blurOnSubmit={false}\n          />\n          <TextInput\n            ref={input => {\n              this.passwordTextInput = input;\n            }}\n            style={styles.input}\n            placeholder=\"Mot de passe\"\n            textContentType=\"password\"\n            autoCapitalize=\"none\"\n            secureTextEntry={true}\n            onChangeText={this._onChangePassword}\n          />\n        </View>\n        <Button\n          mode={\"contained\"}\n          labelStyle={{ color: \"#fff\" }}\n          style={styles.btnSignIn}\n          onPress={() => {\n            this._checkTextInput(email.trim(), password);\n          }}\n        >\n          Connexion\n        </Button>\n      </View>\n    );\n  }\n}\n\n/**\n * Styles of the SignIn Component\n */\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    flexDirection: \"column\",\n    alignItems: \"stretch\",\n    justifyContent: \"center\"\n  },\n  textInputContainer: {\n    marginTop: 20\n  },\n  input: {\n    height: 50,\n    marginLeft: 50,\n    marginRight: 50,\n    paddingLeft: 15,\n    borderColor: \"#ecf0f1\",\n    borderWidth: 1,\n    borderRadius: 6,\n    marginBottom: 25\n  },\n  btnSignIn: {\n    backgroundColor: \"#4834d4\",\n    padding: 8,\n    paddingLeft: 35,\n    paddingRight: 35,\n    marginLeft: 50,\n    marginRight: 50,\n    marginBottom: 40\n  },\n  signInTitle: {\n    textAlign: \"center\",\n    fontSize: 20,\n    marginBottom: 10\n  }\n});\n\nexport default SignIn;\n",
+    "static": true,
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/components/SignIn.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "components/SignIn.js",
+    "static": true,
+    "longname": "components/SignIn.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "./components/SignIn.js",
+    "importStyle": null,
+    "description": "Styles of the SignIn Component",
+    "lineNumber": 184,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "class",
+    "name": "SignIn",
+    "memberof": "components/SignIn.js",
+    "static": true,
+    "longname": "components/SignIn.js~SignIn",
+    "access": "public",
+    "export": true,
+    "importPath": "./components/SignIn.js",
+    "importStyle": "SignIn",
+    "description": "The SignIn class",
+    "lineNumber": 10,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "navigationOptions",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": true,
+    "longname": "components/SignIn.js~SignIn.navigationOptions",
+    "access": "public",
+    "description": "Pass the title option to the navigation",
+    "lineNumber": 14,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "state",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#state",
+    "access": "public",
+    "description": "email: The user email |\npassword: The user password | \nusers: Users list",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "{email: string, password: string, users: array}"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "componentDidMount",
+    "memberof": "components/SignIn.js~SignIn",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#componentDidMount",
+    "access": "public",
+    "description": "Call the method selectUser to get all the users of the DB",
+    "lineNumber": 33,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "_selectUsers",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#_selectUsers",
+    "access": "private",
+    "description": "Select all the users from the SQLite DB",
+    "lineNumber": 40,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "member",
+    "name": "_onChangeEmail",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#_onChangeEmail",
+    "access": "private",
+    "description": "Handle the change of email",
+    "lineNumber": 65,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The email to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "name": "_onChangePassword",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#_onChangePassword",
+    "access": "private",
+    "description": "Handle the change of password",
+    "lineNumber": 75,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The password to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "name": "_checkUser",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#_checkUser",
+    "access": "private",
+    "description": "Check if the informations put by the user are equivalent to a user from the SQLite DB",
+    "lineNumber": 86,
+    "params": [],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "name": "_checkTextInput",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#_checkTextInput",
+    "access": "private",
+    "description": "Check if the email and password put by the user are correct",
+    "lineNumber": 114,
+    "params": [],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "render",
+    "memberof": "components/SignIn.js~SignIn",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#render",
+    "access": "public",
+    "description": "Render the sign in screen",
+    "lineNumber": 134,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{React.Component} - SignIn Component"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "React.Component"
+      ],
+      "spread": false,
+      "description": "SignIn Component"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 77,
+    "kind": "member",
+    "name": "passwordTextInput",
+    "memberof": "components/SignIn.js~SignIn",
+    "static": false,
+    "longname": "components/SignIn.js~SignIn#passwordTextInput",
+    "access": "public",
+    "description": null,
+    "lineNumber": 156,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "components/SignUp.js",
+    "content": "import React from \"react\";\nimport {\n  StyleSheet,\n  Text,\n  TextInput,\n  View,\n  Keyboard,\n  ScrollView\n} from \"react-native\";\nimport { Button } from \"react-native-paper\";\nimport Toast from \"react-native-root-toast\";\nimport * as SQLite from \"expo-sqlite\";\n\n/**\n * The SignUp class\n */\nclass SignUp extends React.Component {\n  /**\n   * Pass the title option to the navigation\n   */\n  static navigationOptions = {\n    title: \"Inscription\"\n  };\n\n  /**\n   * name: The user name | \n   * email: The user email |\n   * password: The user password\n   * @type {{name: string, email: string, password: string}}\n   */\n  state = {\n    name: \"\",\n    email: \"\",\n    password: \"\"\n  };\n\n  /**\n   * Handle the change of name\n   *  @param {string} text - The name to change\n   */\n  _onChangeName = text => {\n    this.setState({\n      name: text\n    });\n  };\n\n  /**\n   * Handle the change of email\n   *  @param {string} text - The email to change\n   */\n  _onChangeEmail = text => {\n    this.setState({\n      email: text\n    });\n  };\n\n  /**\n   * Handle the change of password\n   *  @param {string} text - The password to change\n   */\n  _onChangePassword = text => {\n    this.setState({\n      password: text\n    });\n  };\n\n  /**\n   * Insert the user in the SQLite DB\n   * @param  {string} name - The name of the user\n   * @param  {string} email - The email of the user\n   * @param  {string} password - The password of the user\n   */\n  _insert = (name, email, password) => {\n    const usersDB = SQLite.openDatabase(\"users.db\");\n    usersDB.transaction(tx => {\n      tx.executeSql(\n        \"CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);\"\n      );\n    });\n\n    const query = \"INSERT INTO users(name, email, password) VALUES (?,?,?);\";\n    const usr = [name, email, password];\n\n    usersDB.transaction(tx => {\n      tx.executeSql(query, usr);\n    });\n  };\n\n  /**\n   * Check the value in the text input\n   * @param  {string} email - Email of the user\n   * @param  {string} password - Password of the user\n   * @param  {string} name - Name of the user\n   */\n  _checkTextInput = (email, password, name) => {\n    Keyboard.dismiss();\n    let reg = /^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/;\n\n    if (\n      reg.test(email) === false &&\n      !email.length > 0 &&\n      !password.length > 0\n    ) {\n      Toast.show(\"Entrez un email valide\", {\n        duration: Toast.durations.LONG,\n        position: Toast.positions.TOP + 60,\n        shadow: false,\n        opacity: 1\n      });\n    } else {\n      this._insert(name, email, password);\n      this.props.navigation.navigate(\"SignIn\");\n    }\n  };\n\n  /**\n   * Render the sign up screen\n   * @returns {React.Component} - SignUp Component\n   */\n  render() {\n    const { name, email, password } = this.state;\n    return (\n      <View style={styles.container}>\n        <Text style={styles.signUpTitle}>Créez votre compte</Text>\n        <View style={styles.textInputContainer}>\n          <ScrollView>\n            <TextInput\n              style={styles.input}\n              placeholder=\"Nom\"\n              onChangeText={this._onChangeName}\n              autoCapitalize=\"none\"\n              returnKeyType={\"next\"}\n              onSubmitEditing={() => {\n                this.emailTextInput.focus();\n              }}\n              blurOnSubmit={false}\n            />\n            <TextInput\n              ref={input => {\n                this.emailTextInput = input;\n              }}\n              style={styles.input}\n              placeholder=\"E-mail\"\n              textContentType=\"emailAddress\"\n              keyboardType=\"email-address\"\n              onChangeText={this._onChangeEmail}\n              autoCapitalize=\"none\"\n              returnKeyType={\"next\"}\n              onSubmitEditing={() => {\n                this.passwordTextInput.focus();\n              }}\n              blurOnSubmit={false}\n            />\n            <TextInput\n              ref={input => {\n                this.passwordTextInput = input;\n              }}\n              style={styles.input}\n              placeholder=\"Mot de passe\"\n              textContentType=\"password\"\n              secureTextEntry={true}\n              onChangeText={this._onChangePassword}\n            />\n          </ScrollView>\n        </View>\n        <Button\n          mode={\"contained\"}\n          labelStyle={{ color: \"#fff\" }}\n          style={styles.btnSignIn}\n          onPress={() =>\n            this._checkTextInput(email.trim(), password, name.trim())\n          }\n        >\n          Valider\n        </Button>\n      </View>\n    );\n  }\n}\n\n/**\n * Styles of the SignUp Component\n */\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    flexDirection: \"column\",\n    alignItems: \"stretch\",\n    justifyContent: \"center\"\n  },\n  textInputContainer: {\n    marginTop: 20\n  },\n  input: {\n    height: 50,\n    marginLeft: 50,\n    marginRight: 50,\n    paddingLeft: 15,\n    borderColor: \"#ecf0f1\",\n    borderWidth: 1,\n    borderRadius: 6,\n    marginBottom: 25\n  },\n  btnSignIn: {\n    padding: 8,\n    paddingLeft: 35,\n    paddingRight: 35,\n    marginLeft: 50,\n    marginRight: 50\n  },\n  signUpTitle: {\n    textAlign: \"center\",\n    fontSize: 20,\n    marginBottom: 10\n  }\n});\n\nexport default SignUp;\n",
+    "static": true,
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/components/SignUp.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "styles",
+    "memberof": "components/SignUp.js",
+    "static": true,
+    "longname": "components/SignUp.js~styles",
+    "access": "public",
+    "export": false,
+    "importPath": "./components/SignUp.js",
+    "importStyle": null,
+    "description": "Styles of the SignUp Component",
+    "lineNumber": 184,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "class",
+    "name": "SignUp",
+    "memberof": "components/SignUp.js",
+    "static": true,
+    "longname": "components/SignUp.js~SignUp",
+    "access": "public",
+    "export": true,
+    "importPath": "./components/SignUp.js",
+    "importStyle": "SignUp",
+    "description": "The SignUp class",
+    "lineNumber": 17,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "navigationOptions",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": true,
+    "longname": "components/SignUp.js~SignUp.navigationOptions",
+    "access": "public",
+    "description": "Pass the title option to the navigation",
+    "lineNumber": 21,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "state",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#state",
+    "access": "public",
+    "description": "name: The user name | \nemail: The user email |\npassword: The user password",
+    "lineNumber": 31,
+    "type": {
+      "nullable": null,
+      "types": [
+        "{name: string, email: string, password: string}"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "_onChangeName",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#_onChangeName",
+    "access": "private",
+    "description": "Handle the change of name",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The name to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "member",
+    "name": "_onChangeEmail",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#_onChangeEmail",
+    "access": "private",
+    "description": "Handle the change of email",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The email to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "member",
+    "name": "_onChangePassword",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#_onChangePassword",
+    "access": "private",
+    "description": "Handle the change of password",
+    "lineNumber": 61,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "The password to change"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "name": "_insert",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#_insert",
+    "access": "private",
+    "description": "Insert the user in the SQLite DB",
+    "lineNumber": 73,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The name of the user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "The email of the user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": "The password of the user"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "_checkTextInput",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#_checkTextInput",
+    "access": "private",
+    "description": "Check the value in the text input",
+    "lineNumber": 95,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "Email of the user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": "Password of the user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Name of the user"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "render",
+    "memberof": "components/SignUp.js~SignUp",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#render",
+    "access": "public",
+    "description": "Render the sign up screen",
+    "lineNumber": 120,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{React.Component} - SignUp Component"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "React.Component"
+      ],
+      "spread": false,
+      "description": "SignUp Component"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 89,
+    "kind": "member",
+    "name": "emailTextInput",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#emailTextInput",
+    "access": "public",
+    "description": null,
+    "lineNumber": 140,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "member",
+    "name": "passwordTextInput",
+    "memberof": "components/SignUp.js~SignUp",
+    "static": false,
+    "longname": "components/SignUp.js~SignUp#passwordTextInput",
+    "access": "public",
+    "description": null,
+    "lineNumber": 156,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "",
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"main\": \"node_modules/expo/AppEntry.js\",\n  \"scripts\": {\n    \"start\": \"expo start\",\n    \"android\": \"expo start --android\",\n    \"ios\": \"expo start --ios\",\n    \"web\": \"expo start --web\",\n    \"eject\": \"expo eject\"\n  },\n  \"dependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\n    \"esdoc-react-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"expo\": \"~36.0.0\",\n    \"expo-sqlite\": \"^8.0.0\",\n    \"react\": \"~16.9.0\",\n    \"react-dom\": \"~16.9.0\",\n    \"react-native\": \"https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz\",\n    \"react-native-gesture-handler\": \"~1.5.0\",\n    \"react-native-paper\": \"^3.4.0\",\n    \"react-native-reanimated\": \"~1.4.0\",\n    \"react-native-root-toast\": \"3.0.2\",\n    \"react-native-screens\": \"2.0.0-alpha.12\",\n    \"react-native-web\": \"~0.11.7\",\n    \"react-navigation\": \"^4.0.10\",\n    \"react-navigation-stack\": \"^1.10.3\"\n  },\n  \"devDependencies\": {\n    \"babel-preset-expo\": \"~8.0.0\",\n    \"@babel/core\": \"^7.0.0\"\n  },\n  \"private\": true\n}\n",
+    "longname": "/Users/Jean/Desktop/Cloud Jean/Etudes/CCI/Cours/Cross Platformes/You-log/youLog/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

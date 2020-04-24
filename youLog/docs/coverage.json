@@ -1,0 +1,32 @@
+{
+  "coverage": "92.3%",
+  "expectCount": 39,
+  "actualCount": 36,
+  "files": {
+    "components/Logged.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "components/ModalPassword.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "components/SignIn.js": {
+      "expectCount": 12,
+      "actualCount": 11,
+      "undocumentLines": [
+        156
+      ]
+    },
+    "components/SignUp.js": {
+      "expectCount": 12,
+      "actualCount": 10,
+      "undocumentLines": [
+        140,
+        156
+      ]
+    }
+  }
+}

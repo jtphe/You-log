@@ -5,18 +5,29 @@ import {
   TextInput,
   View,
   Keyboard,
-  ScrollView,
-  Alert
+  ScrollView
 } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
 import * as SQLite from "expo-sqlite";
 
+/**
+ * The SignUp class
+ */
 class SignUp extends React.Component {
+  /**
+   * Pass the title option to the navigation
+   */
   static navigationOptions = {
     title: "Inscription"
   };
 
+  /**
+   * name: The user name | 
+   * email: The user email |
+   * password: The user password
+   * @type {{name: string, email: string, password: string}}
+   */
   state = {
     name: "",
     email: "",
@@ -102,6 +113,10 @@ class SignUp extends React.Component {
     }
   };
 
+  /**
+   * Render the sign up screen
+   * @returns {React.Component} - SignUp Component
+   */
   render() {
     const { name, email, password } = this.state;
     return (
@@ -163,6 +178,9 @@ class SignUp extends React.Component {
   }
 }
 
+/**
+ * Styles of the SignUp Component
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
