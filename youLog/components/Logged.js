@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { Button } from "react-native-paper";
 import ModalPassword from "./ModalPassword";
-import * as SQLite from "expo-sqlite";
+// import * as SQLite from "expo-sqlite";
 
 /**
  * The Logged class
@@ -24,15 +24,36 @@ class Logged extends React.Component {
    */
   state = {
     visible: false,
-    password: JSON.stringify(
-      this.props.navigation.state.params.password
-    ).replace(/\"/g, ""),
-    id: JSON.stringify(this.props.navigation.state.params.id).replace(
-      /\"/g,
-      ""
-    ),
-    canUpdatePassword: true
+    password: '',
+    id: null,
+    canUpdatePassword: true,
+    email: '',
+    name: ''
   };
+
+  UNSAFE_componentWillReceiveProps(){
+    if(this.props.navigation.state.params.id){
+      this.setState({
+        password: JSON.stringify(
+          this.props.navigation.state.params.password
+        ).replace(/\"/g, "")
+      });
+    }
+    if(this.props.navigation.state.params.id){
+      this.setState({
+        id: JSON.stringify(this.props.navigation.state.params.id).replace(
+          /\"/g,
+          ""
+        )
+      })
+    }
+    if( this.props.navigation.state.params){
+      this.setState({
+        email: this.props.navigation.state.params.email,
+        name: this.props.navigation.state.params.name
+      })
+    }
+  }
 
   /**
    * Update the password in the SQLite DB
@@ -95,8 +116,7 @@ class Logged extends React.Component {
    * @returns {React.Component} - Logged Component
    */
   render() {
-    const { visible, password, canUpdatePassword } = this.state;
-    const { email, name } = this.props.navigation.state.params;
+    const { visible, password, canUpdatePassword, email, name } = this.state;
     const EMAIL = this._convertToJsObject(email);
     const NAME = this._convertToJsObject(name);
 

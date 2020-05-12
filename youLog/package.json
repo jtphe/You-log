@@ -5,9 +5,12 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
     "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-jsx-plugin": "^1.0.0",
@@ -25,11 +28,13 @@
     "react-native-screens": "2.6.0",
     "react-native-web": "~0.12.2",
     "react-navigation": "^4.3.8",
-    "react-navigation-stack": "^2.3.13"
+    "react-navigation-stack": "^2.3.13",
+    "react-test-renderer": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
     "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.9.0"
+    "jest": "^26.0.1"
   },
   "private": true
 }
