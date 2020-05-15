@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, TextInput, Keyboard } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
-import * as SQLite from "expo-sqlite";
+// import * as SQLite from "expo-sqlite";
 
 /**
  * The SignIn class
@@ -30,33 +30,33 @@ class SignIn extends React.Component {
   /**
    * Call the method selectUser to get all the users of the DB
    */
-  componentDidMount() {
-    this._selectUsers();
-  }
+  // componentDidMount() {
+  //   this._selectUsers();
+  // }
 
   /**
    * Select all the users from the SQLite DB
    */
-  _selectUsers = () => {
-    const usersDB = SQLite.openDatabase("users.db");
-    usersDB.transaction(tx => {
-      tx.executeSql(
-        "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
-      );
-    });
+  // _selectUsers = () => {
+  //   const usersDB = SQLite.openDatabase("users.db");
+  //   usersDB.transaction(tx => {
+  //     tx.executeSql(
+  //       "CREATE TABLE IF NOT EXISTS users (id integer primary key not null, name text, email text, password text);"
+  //     );
+  //   });
 
-    const query = "SELECT * FROM users";
-    const params = [];
-    usersDB.transaction(tx => {
-      tx.executeSql(query, params, (_, { rows }) => {
-        if (rows.length > 0) {
-          this.setState({
-            users: rows._array
-          });
-        }
-      });
-    });
-  };
+  //   const query = "SELECT * FROM users";
+  //   const params = [];
+  //   usersDB.transaction(tx => {
+  //     tx.executeSql(query, params, (_, { rows }) => {
+  //       if (rows.length > 0) {
+  //         this.setState({
+  //           users: rows._array
+  //         });
+  //       }
+  //     });
+  //   });
+  // };
 
   /**
    * Handle the change of email

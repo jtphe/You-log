@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
-import * as SQLite from "expo-sqlite";
+// import * as SQLite from "expo-sqlite";
 
 /**
  * The SignUp class
