@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Logged test 1`] = `
+exports[`SIGN IN TESTS [SNAPSHOT]: SIGN IN COMPONENT TEST 1`] = `
 <View
   style={
     Object {

@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity, Keyboard } from "react-native";
 import { Button } from "react-native-paper";
 import ModalPassword from "./ModalPassword";
+import {_updatePassword} from './utils';
 
 /**
  * The Logged class
@@ -51,33 +52,6 @@ class Logged extends React.Component {
       })
     }
   }
-
-  /**
-   * Update the password in the SQLite DB
-   * @param {string} text - The new password
-   */
-  _updatePassword = async () => {
-    try {
-      var form = new FormData();
-      form.append("mail", this.state.email);
-      form.append("password", this.state.password);
-      await fetch("https://www.lmg-graphisme-web-multimedia.fr/api/updateuser.php", {
-        method: "POST",
-        header: {
-          Accept: "application/json",
-          "Content-Type": "'multipart/form-data"
-        },
-        body: form
-      });
-    } catch (error) {
-      console.log("Error while inserting user", error);
-    }
-    this.setState({
-      visible: false,
-      canUpdatePassword: false
-    });
-    Keyboard.dismiss();
-  };
 
   /**
    * Hide the modal to change the password when user click on the cancel button

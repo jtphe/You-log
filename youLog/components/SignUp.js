@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
+global.fetch = require('jest-fetch-mock');
+import { _insert } from './utils';
 
 /**
  * The SignUp class
@@ -61,34 +63,6 @@ class SignUp extends React.Component {
     this.setState({
       password: text
     });
-  };
-
-  /**
-   * Insert the user in the SQLite DB
-   * @param  {string} name - The name of the user
-   * @param  {string} email - The email of the user
-   * @param  {string} password - The password of the user
-   */
-  _insert = async (name, email, password) => {
-    try {
-      var form = new FormData();
-      form.append("name", name);
-      form.append("mail", email);
-      form.append("password", password);
-      await fetch(
-        "https://www.lmg-graphisme-web-multimedia.fr/api/insertuser.php",
-        {
-          method: "POST",
-          header: {
-            Accept: "application/json",
-            "Content-Type": "'multipart/form-data"
-          },
-          body: form
-        }
-      );
-    } catch (error) {
-      console.log("Error while inserting user", error);
-    }
   };
 
   /**

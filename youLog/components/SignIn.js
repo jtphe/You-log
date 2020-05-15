@@ -2,6 +2,9 @@ import React from "react";
 import { StyleSheet, View, Text, TextInput, Keyboard } from "react-native";
 import { Button } from "react-native-paper";
 import Toast from "react-native-root-toast";
+global.fetch = require('jest-fetch-mock'); 
+import {_loadUsers} from './utils';
+// fetch.mockResponse(JSON.stringify({ testing: true }));
 
 /**
  * The SignIn class
@@ -29,30 +32,6 @@ class SignIn extends React.Component {
   componentDidMount() {
     this._loadUsers();
   }
-
-  /**
-   * Select all the users from the API
-   */
-  _loadUsers = async () => {
-    try {
-      let response = await fetch(
-        "https://www.lmg-graphisme-web-multimedia.fr/api/getusers.php",
-        {
-          method: "GET",
-          header: {
-            Accept: "application/json",
-            "Content-Type": "application.json"
-          }
-        }
-      );
-      let responseJs = await response.json();
-      this.setState({
-        users: responseJs
-      });
-    } catch (error) {
-      console.log("Error while loading user", error);
-    }
-  };
 
   /**
    * Handle the change of email
