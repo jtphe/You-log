@@ -18,29 +18,7 @@ class ModalPassword extends React.Component {
   constructor(props) {
     super(props);
   }
-  
-  /**
-   * password : The user password
-   * @type {password: string}
-   */
-  state = {
-    password: this.props.password
-  };
 
-  /**
-   * Handle the change of password
-   *  @param {string} text - The password to change
-   */
-  _setPassword = text => {
-    this.setState({
-      password: text
-    });
-  };
-
-  /**
-   * Render the password modal
-   * @returns {React.Component} - Password Modal
-   */
   render() {
     return (
       <Modal
